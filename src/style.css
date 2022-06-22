@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+/* styling for list app */
+
+
+/* page variables */
+:root {
+    /* colors */
+    --load-color: #91aef4;
+    --main-bg-color: #324d9b ;
+    --container-bg-color: #051853; 
+    --primary-btn-color: rgb(141, 20, 20) ;
+    --secondary-btn-color: #305fb4 ;
+    --primary-link-color: #516dba; 
+    --secondary-link-color: #522184; 
+    --main-heading-color: #ffffff ; 
+    --sub-heading-color: #516dba;
+
+    /* border radius */
+    --main-border-radius: 3rem;
+    --secondary-border-radius: 1rem;
+    --btn-border-circle: 50%;
+    --btn-border-round: 12px;
+
+}
+* {
+    box-sizing: border-box;
+    color: rgb(168, 30, 30);
+}
+body{
+   background-color: var(--load-color); 
+   scrollbar-color:var(--primary-btn-color);
+   font-family: 'Unica One', cursive, sans-serif;
+}
+.container { 
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+}
+/* main */
+.main {
+    /* padding: 1rem 1.5rem; */
+    margin-top: 2rem;
+    background-color: var(--main-bg-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;        
+    width: 500px;/*
+    max-width: 300px;
+    height: 550px;
+    max-height: 600px; */
+    padding: 1rem;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.section {
+    margin: .9rem 0;
+}
+.section > h2 {
+    color: var(--sub-heading-color);
+    font-weight: 500;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.section-zero { 
+    margin-top: 3.5rem;
+}
+.section-zero #title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* sections */ 
+.inner-section {
+    background-color: var(--container-bg-color);
+    border-radius: var(--secondary-border-radius);
+    padding: 1rem .5rem;
+}
+
+/* section one */
+.inner-section  .subsection-task {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    align-items: baseline;
+}
+.section-one input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #596485;
+    width: 90%;
+    outline: 0;
+    color: #ffffff;
+}
+
+#add-btn {
+    border-radius: var(--btn-border-circle);
+    background-color: var(--primary-btn-color);
+    border: none;
+    padding: 6px 8px;
+    color: #ffffff;
+}
+
+#add-btn:hover {
+    background-color: var(--secondary-btn-color);
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    background-color: white;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+/* section-two */
+
+
+
+
+/* section-three */
+
+#incomplete-tasks  label { 
+    color: #acacac;
+}
+
+
+#complete-tasks  label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  
+  /* Edit Task */
+  
+  ul li input[type=text] {
+    display: none;
+    color: var(--main-bg-color);
+  }
+  
+  ul li.editMode input[type=text] {
+    display: block;
+  }
+  
+  ul li.editMode label {
+    display: none;
+  }
+  
+  #clear-btn {
+    font-size: 1.1rem;
+    float: right;
+    text-align: center;
+    border-radius: var(--btn-border-circle);    
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 10px;
+    color: #ffffff;
+    font-family: 'Unica One', cursive, sans-serif;
+  }
+  
+#clear-btn:hover {
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+.edit, .delete {
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+}
+
+.edit:hover, .delete:hover {
+    background-color: transparent;
+    color: var(--secondary-btn-color);
+    align-items: flex;
+}
+
+
+/* make added rows evenly spaced */
+#complete-tasks li {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 100%;
+}
+
+li {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 100%;
+    padding-bottom: .5rem;
+    font-family: sans-serif;
+}
+.label, #label, label{ 
+    overflow-x: hidden;
+    width: 90%;
+}
+label::-webkit-scrollbar {
+    display: none;
+}
+
+/* buttons self alignt end of list */

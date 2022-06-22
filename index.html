@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Maker App</title>
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="src/resets.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <!-- link fors fonts/ icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Itim&family=Source+Code+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="section section-zero">
+                <h1 id="title">List Maker <i class= "fas fa-tasks" style="font-size: 2.8rem;"></i></h1>
+            </div>
+
+
+            <div class="section section-one">
+                <h2>Start a List</h2>
+                <div class="inner-section">
+                    <p class="subsection-task">
+                        <!-- <label for="new-task"></label> -->
+                        <input id="new-task" type="text" placeholder="Add a task">
+                        <button id="add-btn"><i class="fas fa-plus" style="color:white;"></i></button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section section-two">
+                <h2>Tasks</h2>
+                <div class="inner-section">
+                    <ul id="incomplete-tasks">
+                        <!-- <li></li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section section-three">
+                <h2>Completed</h2>
+                <div class="inner-section">
+                    <ul id="complete-tasks">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section section-four">
+                <!-- <div class="inner-section">
+                    <button id="clear-btn">
+                        <p>Clear</p>
+                    </button>
+                </div> -->
+                <button id="clear-btn">
+                    <p>Clear All</p>
+                </button>
+            </div>
+        </div>
+    </div
+
+
+
+
+
+
+
+    <!-- ///////////////////////////////////////////////////////////////////// -->
+    <!-- link for js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
